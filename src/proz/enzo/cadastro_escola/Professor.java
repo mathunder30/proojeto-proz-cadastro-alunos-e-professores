@@ -1,3 +1,4 @@
+package proz.enzo.cadastro_escola;
 import java.util.ArrayList;
 import java.util.Scanner;
 
