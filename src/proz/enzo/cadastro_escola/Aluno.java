@@ -112,7 +112,7 @@ public class Aluno {
                         if (opcaoAlterar == 1) {
                             System.out.println("Digite o nome que deseja alterar: ");
                             String NovoNome = sc.nextLine();
-                            ArrayAlunos.setNome(NovoNome);
+                            x.setNome(NovoNome);
 
                             
                         }
