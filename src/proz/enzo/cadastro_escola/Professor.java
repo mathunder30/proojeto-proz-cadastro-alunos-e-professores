@@ -124,7 +124,7 @@ public class Professor {
                         int opcoesAlterar = sc.nextInt();
                         if (opcoesAlterar == 1) {
                             System.out.println("Digite o nome que deseja alterar: ");
-                            String NovoNome = sc.next();
+                            String NovoNome = sc.nextLine();
                             x.setNome(NovoNome);
                             
                         } else if(opcoesAlterar == 2){
