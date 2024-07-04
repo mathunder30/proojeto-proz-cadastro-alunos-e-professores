@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Turma {
     private String nometurma;
+    public String getNometurma() {
+        return nometurma;
+    }
     private List<Professor> professores;
     private List<Aluno> alunos;
 
@@ -28,7 +31,7 @@ public class Turma {
     public void listarAlunos(){
         System.out.println("Alunos da turma " + nometurma + ":");
         for (Aluno aluno : alunos) {
-            System.out.println("CPF: "+ aluno.getCpf() + "Nome: "+ aluno.getAluno());
+            System.out.println("CPF: "+ aluno.getMatricula() + "Nome: "+ aluno.getAluno());
         }
     }
 }
