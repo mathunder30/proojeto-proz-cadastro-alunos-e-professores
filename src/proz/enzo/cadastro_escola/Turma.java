@@ -28,7 +28,7 @@ public class Turma {
     public void listarAlunos(){
         System.out.println("Alunos da turma " + nometurma + ":");
         for (Aluno aluno : alunos) {
-            System.out.println("CPF: "+ aluno.getCpf() + "Nome: "+ aluno.getNome());
+            System.out.println("CPF: "+ aluno.getCpf() + "Nome: "+ aluno.getAluno());
         }
     }
 }
