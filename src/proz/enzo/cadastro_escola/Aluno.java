@@ -77,12 +77,12 @@ public void setCpf(String cpf) {
 }
 
 public void setNome(String novoNome) {
-    // TODO Auto-generated method stub
+    
     throw new UnsupportedOperationException("Unimplemented method 'setNome'");
 }
 
 public void setcpf(String novoCPF) {
-    // TODO Auto-generated method stub
+    
     throw new UnsupportedOperationException("Unimplemented method 'setcpf'");
 }
    
@@ -92,7 +92,7 @@ public void setcpf(String novoCPF) {
  */
 public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
-    boolean escolheaInteracao = true;
+    
     boolean repeticao = true;
     ArrayList<Aluno> alunos = new ArrayList<>();
     
