@@ -11,6 +11,21 @@ public class Aluno {
     
     
 
+    public String getNome() {
+        return nome;
+    }
+    public String getCpf() {
+        return cpf;
+    }
+    public String getSenha() {
+        return senha;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getEscolaridade() {
+        return escolaridade;
+    }
     public Aluno(String nome, String cpf, String senha){
         // this vai significar ESTE REGISTRO
         this.nome = nome;

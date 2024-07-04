@@ -11,6 +11,27 @@ public class Professor {
     private String cep;
     private String genero;
 
+    public String getNome() {
+        return nome;
+    }
+    public String getCpf() {
+        return cpf;
+    }
+    public String getMatricula() {
+        return matricula;
+    }
+    public String getMasp() {
+        return masp;
+    }
+    public String getIdade() {
+        return idade;
+    }
+    public String getCep() {
+        return cep;
+    }
+    public String getGenero() {
+        return genero;
+    }
     public Professor(String nome, String cpf, String matricula, String masp, String idade, String cep, String genero){
         this.nome = nome;
         this.cpf = cpf;
