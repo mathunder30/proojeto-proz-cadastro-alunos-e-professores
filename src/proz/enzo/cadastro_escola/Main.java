@@ -8,7 +8,7 @@ public class Main {
     private static ArrayList<Professor> professores = new ArrayList<>();
     private static ArrayList<Aluno> alunos = new ArrayList<>();
     private static ArrayList<Turma> turmas = new ArrayList<>();
-    private static ArrayList<disciplina> disciplinas = new ArrayList<>();
+    private static ArrayList<Disciplina> disciplinas = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -144,11 +144,10 @@ public class Main {
 
     private static void cadastrarDisciplina(Scanner sc) {
         System.out.println("Digite a primeira disciplina:");
-        String primeiraDisciplina = sc.nextLine();
-        System.out.println("Digite a segunda disciplina:");
-        String segundaDisciplina = sc.nextLine();
+        String nomeDisciplina = sc.nextLine();
         
-        disciplina.add(new disciplina(primeiraDisciplina, segundaDisciplina));
+        
+        disciplinas.add(new Disciplina(nomeDisciplina));
         System.out.println("Disciplina cadastrada com sucesso!");
     }
 
@@ -203,10 +202,10 @@ public class Main {
 
     private static void listarDisciplinas() {
         if (disciplinas.isEmpty()) {
-            System.out.println("Nenhuma disciplina cadastrada.");
+            System.out.println("Nenhuma Disciplina cadastrada.");
         } else {
-            for (disciplina disciplina : disciplinas) {
-                disciplina.exibir();
+            for (Disciplina Disciplina : disciplinas) {
+                Disciplina.exibir();
             }
         }
     }

@@ -4,37 +4,26 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class disciplina{
-     public String portugues , matematica;
+public class Disciplina{
+     public String nomeDisciplina;
 
     
-    public disciplina (String portugues, String matematica){
-        this.portugues = portugues;
-        this.matematica = matematica;
-        
+    public Disciplina (String nomeDisciplina){
+        this.nomeDisciplina = nomeDisciplina;
     }
 
    public void exibir(){
-    System.out.println("Portugues: " + this.portugues);
-    System.out.println("Matematica: " +   this.matematica);
+    System.out.println("Nome Disciplina: " + this.nomeDisciplina);
     
    }
 
 
-public String getPortugues() {
-    return portugues;
+public String getDisciplina() {
+    return nomeDisciplina;
 }
 
-public void setPortugues(String portugues) {
-    this.portugues = portugues;
-}
-
-public String getMatematica() {
-    return matematica;
-}
-
-public void setMatematica(String matematica) {
-    this.matematica = matematica;
+public void setDisciplina(String nomeDisciplina) {
+    this.nomeDisciplina = nomeDisciplina;
 }
 
 public void setportugues(String novamateria) {
@@ -55,7 +44,7 @@ public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
     boolean escolheaInteracao = true;
     boolean repeticao = true;
-    ArrayList<disciplina> escola = new ArrayList<>();
+    ArrayList<Disciplina> escola = new ArrayList<>();
     
     System.out.println("digite as opções que voce deseja: ");
     System.out.println("1. cadastrar nova Matéria : ");
@@ -70,7 +59,7 @@ public static void main(String[] args) throws Exception {
             String novamateria = sc.next();
             System.out.println("Digite a sua Segunda Disciplina : ");
             String nova2materia = sc.next();
-           escola.add(new disciplina (novamateria, nova2materia ));
+           escola.add(new Disciplina (novamateria));
             System.out.println("digite 0 para encerrar \ndigite 1 para continuar");
             int verificacao = sc.nextInt();
             if(verificacao == 0){
@@ -83,7 +72,7 @@ public static void main(String[] args) throws Exception {
         }while(repeticao);
         
     } else if(opcoes == 2){
-        for(disciplina x : escola){
+        for(Disciplina x : escola){
             x.exibir();
         } 
     } else if(opcoes == 3){
@@ -92,8 +81,8 @@ public static void main(String[] args) throws Exception {
 
         boolean found = false;
 
-        for(disciplina x : escola){
-            if (x.matematica.equals(materialterar)) {
+        for(Disciplina x : escola){
+            if (x.equals(materialterar)) {
                 
                 found = true;
 
@@ -132,7 +121,7 @@ sc.close();
     
 }
 
-public static void add(disciplina disciplina) {
+public static void add(Disciplina disciplina) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'add'");
 } 
