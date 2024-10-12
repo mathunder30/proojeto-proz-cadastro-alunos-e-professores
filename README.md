@@ -1,18 +1,49 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Cadastro de Alunos e Professores
 
-## Folder Structure
+Este projeto é uma aplicação Java que gerencia o cadastro de alunos, professores e turmas de uma escola, incluindo suas respectivas disciplinas.
 
-The workspace contains two folders by default, where:
+## Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Cadastro de alunos
+- Cadastro de professores
+- Cadastro de turmas
+- Atribuição de disciplinas aos professores
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Projeto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O projeto segue a seguinte estrutura:
 
-## Dependency Management
+- `src/proz/enzo/cadastro_escola/`: Contém o código-fonte em Java.
+  - `Aluno.java`: Classe que representa o cadastro de um aluno.
+  - `Professor.java`: Classe que representa o cadastro de um professor.
+  - `Turma.java`: Classe que representa uma turma.
+  - `disciplina.java`: Classe que representa uma disciplina.
+  - `Main.java`: Ponto de entrada da aplicação.
+  
+- `bin/proz/enzo/cadastro_escola/`: Contém os arquivos compilados (`.class`).
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Pré-requisitos
+
+- Java JDK 8 ou superior
+
+## Como executar
+
+1. Clone o repositório para sua máquina local.
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+2. Navegue até a pasta do projeto e compile os arquivos Java:
+   ```bash
+   javac src/proz/enzo/cadastro_escola/*.java
+   ```
+
+3. Execute o programa:
+   ```bash
+   java src/proz/enzo/cadastro_escola/Main
+   ```
+
+## Contribuições
+
+Sinta-se à vontade para abrir issues ou fazer pull requests para melhorias.
